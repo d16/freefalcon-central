@@ -1,4 +1,4 @@
-/*
+ï»¿/*
  * Machine Generated Event String Resource file.
  * NOTE: This file is read only. DO NOT ATTEMPT TO MODIFY IT BY HAND.
  * Generated on 18-December-1998 at 10:21:47
@@ -489,8 +489,8 @@ char *TheEventStrings[] =
     "ID of message we're saying",
     "Time to start playing this message",
     "Player Callsign, since this might not be available later",
-    "In dogfght… Player team",
-    "in Dogfight…Player slot in team",
+    "In dogfght Player team",
+    "in Dogfight Player slot in team",
     "What the player is doing",
     "Object Designating",
     "Object Designated",

@@ -1,4 +1,4 @@
-#include "stdhdr.h"
+﻿#include "stdhdr.h"
 #include "geometry.h"
 #include "debuggr.h"
 #include "object.h"

@@ -1,4 +1,4 @@
-// File open functions to handle failed file openings
+﻿// File open functions to handle failed file openings
 // These functions use a windows Dialog box (repetedly) to get the user to insert a CD
 // Peter Ward
 

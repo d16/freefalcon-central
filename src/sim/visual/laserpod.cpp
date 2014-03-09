@@ -1,4 +1,4 @@
-#include "stdhdr.h"
+﻿#include "stdhdr.h"
 #include "object.h"
 #include "laserpod.h"
 #include "Graphics/Include/renderir.h"

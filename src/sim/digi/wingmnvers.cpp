@@ -1,4 +1,4 @@
-#include "stdhdr.h"
+﻿#include "stdhdr.h"
 #include "digi.h"
 #include "simveh.h"
 #include "aircrft.h"

@@ -14,7 +14,7 @@ public:
 
     bool CheckID(char *str)
     {
-        return stricmp(&str[3], Name) == 0;
+        return _stricmp( &str[3], Name ) == 0;
     }
 };
 

@@ -1,4 +1,4 @@
-#include "stdhdr.h"
+﻿#include "stdhdr.h"
 #include "classtbl.h"
 #include "entity.h"
 #include "Object.h"

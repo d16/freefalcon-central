@@ -1,4 +1,4 @@
-#include <float.h>
+﻿#include <float.h>
 #include "stdhdr.h"
 #include "digi.h"
 #include "simdrive.h"

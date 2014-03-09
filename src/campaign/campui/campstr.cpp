@@ -1,4 +1,4 @@
-//
+﻿//
 // Campaign strings file.
 //
 // Most of these are for my tool, so don't need to be double wide, but others of

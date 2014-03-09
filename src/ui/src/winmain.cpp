@@ -993,19 +993,19 @@ void ParseCommandLine(LPSTR cmdLine)
     {
         do
         {
-            if (!stricmp(arg, "-file"))
+            if (!_stricmp( arg, "-file" ))
                 SimDriver.doFile = 1 - SimDriver.doFile;
 
-            if (!stricmp(arg, "-event"))
+            if (!_stricmp( arg, "-event" ))
                 SimDriver.doEvent = TRUE;
 
             if (_strnicmp(arg, "-repair", 2) == 0)
                 RepairObjective = 1;
 
-            if (stricmp(arg, "-armageddon") == 0)
+            if (_stricmp( arg, "-armageddon" ) == 0)
                 DestroyObjective = 1;
 
-            if (stricmp(arg, "-log") == 0)
+            if (_stricmp( arg, "-log" ) == 0)
                 log_frame_rate = TRUE;
 
             if (_strnicmp(arg, "-C", 2) == 0)
@@ -1020,24 +1020,24 @@ void ParseCommandLine(LPSTR cmdLine)
                 GraphicSettingMult = temp >= 1 ? temp : 1;
             }
 
-            if (!stricmp(arg, "-full"))
+            if (!_stricmp( arg, "-full" ))
                 FalconDisplay.displayFullScreen = TRUE;
-            else if (!stricmp(arg, "-window"))
+            else if (!_stricmp( arg, "-window" ))
                 FalconDisplay.displayFullScreen = FALSE;
 
-            if (stricmp(arg, "-hires") == 0)
+            if (_stricmp( arg, "-hires" ) == 0)
                 HighResolutionHackFlag = TRUE;
 
-            if (!stricmp(arg, "-version"))
+            if (!_stricmp( arg, "-version" ))
                 VersionInfo = TRUE;
 
-            if (!stricmp(arg, "-norudder"))
+            if (!_stricmp( arg, "-norudder" ))
                 NoRudder = TRUE;
 
-            if (!stricmp(arg, "-nosmoothing"))
+            if (!_stricmp( arg, "-nosmoothing" ))
                 DisableSmoothing = TRUE;
 
-            if (!stricmp(arg, "-numhats"))
+            if (!_stricmp( arg, "-numhats" ))
                 if ((arg = strtok(NULL, " ")) != NULL)
                     NumHats = atoi(arg);
 
@@ -1071,18 +1071,18 @@ void ParseCommandLine(LPSTR cmdLine)
                 ShiSetAsserts(TRUE);
             }
 
-            if (stricmp(arg, "-resetpilots") == 0)
+            if (_stricmp( arg, "-resetpilots" ) == 0)
                 gClearPilotInfo = 1;
 
 #endif
 
-            if (stricmp(arg, "-tacedit") == 0)
+            if (_stricmp( arg, "-tacedit" ) == 0)
                 gTacticalFullEdit = 1;
 
-            if (stricmp(arg, "-norsc") == 0)
+            if (_stricmp( arg, "-norsc" ) == 0)
                 _LOAD_ART_RESOURCES_ = 0;
 
-            if (stricmp(arg, "-usersc") == 0)
+            if (_stricmp( arg, "-usersc" ) == 0)
                 _LOAD_ART_RESOURCES_ = 1;
 
             if (_strnicmp(arg, "-auto", 5) == 0)
@@ -1110,7 +1110,7 @@ void ParseCommandLine(LPSTR cmdLine)
 
 #endif
 
-            if (!stricmp(arg, "-bandwidth") || !stricmp(arg, "-bandwith") || !stricmp(arg, "-bw"))
+            if (!_stricmp( arg, "-bandwidth" ) || !_stricmp( arg, "-bandwith" ) || !_stricmp( arg, "-bw" ))
                 if ((arg = strtok(NULL, " ")) != NULL)
                 {
                     F4CommsBandwidth = atoi(arg);
@@ -1119,7 +1119,7 @@ void ParseCommandLine(LPSTR cmdLine)
                         F4CommsBandwidth *= -1;
                 }
 
-            if (!stricmp(arg, "-urview"))
+            if (!_stricmp( arg, "-urview" ))
                 if ((arg = strtok(NULL, " ")) != NULL)
                 {
                     UR_HEAD_VIEW = (float)atoi(arg);
@@ -1131,7 +1131,7 @@ void ParseCommandLine(LPSTR cmdLine)
                         UR_HEAD_VIEW = 160;
                 }
 
-            if (!stricmp(arg, "-latency"))
+            if (!_stricmp( arg, "-latency" ))
                 if ((arg = strtok(NULL, " ")) != NULL)
                 {
                     F4CommsLatency = atoi(arg);
@@ -1140,7 +1140,7 @@ void ParseCommandLine(LPSTR cmdLine)
                         F4CommsLatency *= -1;
                 }
 
-            if (!stricmp(arg, "-drop"))
+            if (!_stricmp( arg, "-drop" ))
                 if ((arg = strtok(NULL, " ")) != NULL)
                 {
                     F4CommsDropInterval = atoi(arg);
@@ -1149,34 +1149,34 @@ void ParseCommandLine(LPSTR cmdLine)
                         F4CommsDropInterval *= -1;
                 }
 
-            if (!stricmp(arg, "-session"))
+            if (!_stricmp( arg, "-session" ))
                 if ((arg = strtok(NULL, " ")) != NULL)
                 {
                     F4SessionUpdateTime = atoi(arg);
                 }
 
-            if ((!stricmp(arg, "-hostidx")) || (!stricmp(arg, "-hostid")))
+            if ((!_stricmp( arg, "-hostidx" )) || (!_stricmp( arg, "-hostid" )))
                 if ((arg = strtok(NULL, " ")) != NULL)
                 {
                     ComIPGetHostIDIndex = atoi(arg);
                 }
 
-            if (!stricmp(arg, "-alive"))
+            if (!_stricmp( arg, "-alive" ))
                 if ((arg = strtok(NULL, " ")) != NULL)
                 {
                     F4SessionAliveTimeout = atoi(arg);
                 }
 
-            if (!stricmp(arg, "-mono")) // turn on MONOCHROME support
+            if (!_stricmp( arg, "-mono" )) // turn on MONOCHROME support
                 InitDebug(DEBUGGER_TEXT_MODE);
 
-            if (!stricmp(arg, "-nomono")) // turn off MONOCHROME support
+            if (!_stricmp( arg, "-nomono" )) // turn off MONOCHROME support
                 InitDebug(-1);
 
-            if (!stricmp(arg, "-head")) // turn on head tracking support
+            if (!_stricmp( arg, "-head" )) // turn on head tracking support
                 OTWDriver.SetHeadTracking(TRUE);
 
-            if (!stricmp(arg, "-swap"))
+            if (!_stricmp( arg, "-swap" ))
                 if ((arg = strtok(NULL, " ")) != NULL)
                 {
                     F4CommsLatency = atoi(arg);
@@ -1185,7 +1185,7 @@ void ParseCommandLine(LPSTR cmdLine)
                         F4CommsSwapInterval *= -1;
                 }
 
-            if (!stricmp(arg, "-mtu"))  // Booster and Unz At work
+            if (!_stricmp( arg, "-mtu" ))  // Booster and Unz At work
             {
                 if ((arg = strtok(NULL, " ")) != NULL)
                 {
@@ -1197,10 +1197,10 @@ void ParseCommandLine(LPSTR cmdLine)
             }
             else F4CommsMTU = 500; // Unz Ugly...but it works
 
-            if (!stricmp(arg, "-ef"))
+            if (!_stricmp( arg, "-ef" ))
                 eyeFlyEnabled = 1 - eyeFlyEnabled;
 
-            if (!stricmp(arg, "-ip"))
+            if (!_stricmp( arg, "-ip" ))
             {
                 if ((arg = strtok(NULL, " ")) != NULL)
                     force_ip_address = atoi(arg);
@@ -1216,7 +1216,7 @@ void ParseCommandLine(LPSTR cmdLine)
 
             // sfr: no T&L checks
             // added for server and notebooks
-            if (!stricmp(arg, "-notnl"))
+            if (!_stricmp( arg, "-notnl" ))
                 // exclude emulation devices drivers
                 DisplayOptionsClass::SetDevCaps(D3DDEVCAPS_HWRASTERIZATION);
 
@@ -1229,20 +1229,20 @@ void ParseCommandLine(LPSTR cmdLine)
 
                 }
 
-            if (!stricmp(arg, "-smoke"))
+            if (!_stricmp( arg, "-smoke" ))
                 flag_keep_smoke_trails = TRUE;
 
             // OW
-            if (!stricmp(arg, "-enumswdev"))
+            if (!_stricmp( arg, "-enumswdev" ))
                 g_bEnumSoftwareDevices = true;
 
-            if (!stricmp(arg, "-cockpitverifier"))
+            if (!_stricmp( arg, "-cockpitverifier" ))
                 g_bEnableCockpitVerifier = true;
 
-            if (!stricmp(arg, "-writesndtbl"))
+            if (!_stricmp( arg, "-writesndtbl" ))
                 g_writeSndTbl = true;
 
-            if (!stricmp(arg, "-writemissiontbl"))
+            if (!_stricmp( arg, "-writemissiontbl" ))
                 g_writeMissionTbl = true;
 
         }
@@ -2271,7 +2271,7 @@ void PlayMovie(char *filename, int left, int top, int w, int h, void *theSurface
         top = theRect.top;
         mode = MOVIE_MODE_INTERLACE;
 
-        if (!stricmp(FalconMovieMode, "Hurry"))
+        if (!_stricmp( FalconMovieMode, "Hurry" ))
         {
             mode |= MOVIE_MODE_HURRY;
         }
@@ -2460,7 +2460,7 @@ int i_am(char *with)
     {
         RegQueryValueEx(key, "Username", 0, &type, (uchar*)&name, &size);
 
-        if (stricmp(name, with) == 0)
+        if (_stricmp( name, with ) == 0)
             return TRUE;
 
         RegCloseKey(key);

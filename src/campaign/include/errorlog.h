@@ -1,4 +1,4 @@
-// ======================
+О╩©// ======================
 // Error Reporting System
 // ======================
 
@@ -6,51 +6,51 @@
 // User Descriptions
 // -----------------
 
-/*иммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммм╩
-  ╨ void InitSystemErrors (char* LogFileName, Boolean ImmediateReports) ╨
-  гддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд╤
-  ╨ Initializes the Error Reporting System. Errors can be directed to   ╨
-  ╨ either a file or the screen by specifying either the file name or   ╨
-  ╨ the defined value "LogErrorsToScreen" as the "LogFileName" parameter╨
-  ╨ (repectively). The "ImmediateReports" parameter determines whether  ╨
-  ╨ Errors are immediately reported to file/screen upon receipt (i.e.   ╨
-  ╨ ImmediateReports = TRUE) or whether they are queued until a call to ╨
-  ╨ "ProcessSystemErrors" is made (i.e. ImmediateReports = FALSE). The  ╨
-  ╨ mnemonics "ImmediateErrors" (equal to TRUE) and "QueueErrors"       ╨
-  ╨ (equal to FALSE) are provided for code readability.                 ╨
-  ╨                                                                     ╨
-  ╨ Example calls:                                                      ╨
-  ╨           InitSystemErrors(LogErrorsToScreen,QueueErrors)           ╨
-  ╨           InitSystemErrors("ErrorLog.Dmp",ImmediateErrors)          ╨
-  гддддддддддддддддддддддддддддддддддбдддддддддддддддддддддддддддддддддд╤
-  ╨ Author: Gary L. Stottlemyer      Ё Inquiries: Gary L. Stottlemyer   ╨
-  ╨ Project: Falcon 4.0              Ё Current Project: Falcon 4.0      ╨
-  хммммммммммммммммммммммммммммммммммомммммммммммммммммммммммммммммммммм╪*/
+/*О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫м╩
+  О©╫ void InitSystemErrors (char* LogFileName, Boolean ImmediateReports) О©╫
+  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д╤
+  О©╫ Initializes the Error Reporting System. Errors can be directed to   О©╫
+  О©╫ either a file or the screen by specifying either the file name or   О©╫
+  О©╫ the defined value "LogErrorsToScreen" as the "LogFileName" parameterО©╫
+  О©╫ (repectively). The "ImmediateReports" parameter determines whether  О©╫
+  О©╫ Errors are immediately reported to file/screen upon receipt (i.e.   О©╫
+  О©╫ ImmediateReports = TRUE) or whether they are queued until a call to О©╫
+  О©╫ "ProcessSystemErrors" is made (i.e. ImmediateReports = FALSE). The  О©╫
+  О©╫ mnemonics "ImmediateErrors" (equal to TRUE) and "QueueErrors"       О©╫
+  О©╫ (equal to FALSE) are provided for code readability.                 О©╫
+  О©╫                                                                     О©╫
+  О©╫ Example calls:                                                      О©╫
+  О©╫           InitSystemErrors(LogErrorsToScreen,QueueErrors)           О©╫
+  О©╫           InitSystemErrors("ErrorLog.Dmp",ImmediateErrors)          О©╫
+  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д╤
+  О©╫ Author: Gary L. Stottlemyer      О©╫ Inquiries: Gary L. Stottlemyer   О©╫
+  О©╫ Project: Falcon 4.0              О©╫ Current Project: Falcon 4.0      О©╫
+  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫м╪*/
 
-/*иммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммм╩
-  ╨ void ReportSystemError (SystemErrorCode C, char* ErrorText)         ╨
-  гддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд╤
-  ╨ Allows an Error Code to be reported, along with a text information  ╨
-  ╨ string. The SystemErrorCode type is enumerated and redefinable on a ╨
-  ╨ project by project basis. However, many of the more generically     ╨
-  ╨ defined codes are required by existing library routines.            ╨
-  гддддддддддддддддддддддддддддддддддбдддддддддддддддддддддддддддддддддд╤
-  ╨ Author: Gary L. Stottlemyer      Ё Inquiries: Gary L. Stottlemyer   ╨
-  ╨ Project: Falcon 4.0              Ё Current Project: Falcon 4.0      ╨
-  хммммммммммммммммммммммммммммммммммомммммммммммммммммммммммммммммммммм╪*/
+/*О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫м╩
+  О©╫ void ReportSystemError (SystemErrorCode C, char* ErrorText)         О©╫
+  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д╤
+  О©╫ Allows an Error Code to be reported, along with a text information  О©╫
+  О©╫ string. The SystemErrorCode type is enumerated and redefinable on a О©╫
+  О©╫ project by project basis. However, many of the more generically     О©╫
+  О©╫ defined codes are required by existing library routines.            О©╫
+  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д╤
+  О©╫ Author: Gary L. Stottlemyer      О©╫ Inquiries: Gary L. Stottlemyer   О©╫
+  О©╫ Project: Falcon 4.0              О©╫ Current Project: Falcon 4.0      О©╫
+  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫м╪*/
 
-/*иммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммммм╩
-  ╨ void ProcessSystemErrors (void)                                     ╨
-  гддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд╤
-  ╨ If System Errors are being queued (see InitSystemErrors) then a     ╨
-  ╨ call to ProcessSystemErrors will cause all queued Error Reports to  ╨
-  ╨ be processed and sent to File/Screen. If System Errors are not      ╨
-  ╨ being queued (i.e. they are being reported immediately) then a call ╨
-  ╨ to this routine accomplishes nothing.                               ╨
-  гддддддддддддддддддддддддддддддддддбдддддддддддддддддддддддддддддддддд╤
-  ╨ Author: Gary L. Stottlemyer      Ё Inquiries: Gary L. Stottlemyer   ╨
-  ╨ Project: Falcon 4.0              Ё Current Project: Falcon 4.0      ╨
-  хммммммммммммммммммммммммммммммммммомммммммммммммммммммммммммммммммммм╪*/
+/*О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫м╩
+  О©╫ void ProcessSystemErrors (void)                                     О©╫
+  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д╤
+  О©╫ If System Errors are being queued (see InitSystemErrors) then a     О©╫
+  О©╫ call to ProcessSystemErrors will cause all queued Error Reports to  О©╫
+  О©╫ be processed and sent to File/Screen. If System Errors are not      О©╫
+  О©╫ being queued (i.e. they are being reported immediately) then a call О©╫
+  О©╫ to this routine accomplishes nothing.                               О©╫
+  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫д╤
+  О©╫ Author: Gary L. Stottlemyer      О©╫ Inquiries: Gary L. Stottlemyer   О©╫
+  О©╫ Project: Falcon 4.0              О©╫ Current Project: Falcon 4.0      О©╫
+  О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫м╪*/
 
 // ---------------------------------------
 // Type and External Function Declarations

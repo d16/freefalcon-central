@@ -1,7 +1,7 @@
-#ifndef EXCEPTIONHANDLER_H
+ï»¿#ifndef EXCEPTIONHANDLER_H
 #define EXCEPTIONHANDLER_H
 
-// Copyright © 1998 Bruce Dawson.
+// Copyright ï¿½ 1998 Bruce Dawson.
 
 // We forward declare PEXCEPTION_POINTERS so that the function
 // prototype doesn't needlessly require windows.h.

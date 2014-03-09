@@ -1,4 +1,4 @@
-#include "stdhdr.h"
+﻿#include "stdhdr.h"
 #include "entity.h"
 #include "object.h"
 #include "sensors.h"

@@ -1,4 +1,4 @@
-#include "stdhdr.h"
+﻿#include "stdhdr.h"
 #include <float.h>
 #include "hud.h"
 #include "guns.h"
